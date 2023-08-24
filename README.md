@@ -5,11 +5,8 @@ Most macros should be re-useable for any 3d printer running klipper but it's bes
 Added in printer.cfg using:
 
 ```
-[include macros/print/*.cfg]
-[include macros/mappings/*.cfg]
-[include macros/calibration/*.cfg]
-
-[idle_timeout]
-gcode:
-  _IDLE_TIMEOUT
+[include klipper-macros/print/*.cfg]
+[include klipper-macros/mappings/*.cfg]
+[include klipper-macros/misc/dryer.cfg]
+[include klipper-macros/calibration/*.cfg]
 ```
